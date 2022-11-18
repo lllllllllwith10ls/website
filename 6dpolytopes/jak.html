@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Category 1: Regulars</title>
+        <style>
+        body {
+            font-family: sans-serif;
+        }
+        a:link {
+          color: blue;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        a:hover {
+          color: #0080FF;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        img {
+            width: 50%;
+            height: auto;
+        }
+        </style>
+        <script type="text/javascript">
+        function changeJak() {
+            let n = parseInt(document.getElementById("jak").getAttribute("src").replace("jak","").replace(".png",""));
+            console.log(n);
+            n = (n+1)%7;
+            document.getElementById("jak").src = "jak" + n + ".png";
+        }
+        </script>
+    </head>
+    <body>
+        <h2>Jak</h2>
+        <img id="jak" src="jak0.png" onclick="changeJak();">
+    </body>
+</html>
