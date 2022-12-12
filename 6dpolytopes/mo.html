@@ -24,7 +24,6 @@
         <script type="text/javascript">
         function changeImage(name, num) {
             let n = parseInt(document.getElementById(name).getAttribute("src").replace("mo/"+name,"").replace(".png",""));
-            console.log(n);
             n = (n+1)%num;
             document.getElementById(name).src = "mo/"+name + n + ".png";
         }

@@ -24,7 +24,6 @@
         <script type="text/javascript">
         function changeImage(name, num) {
             let n = parseInt(document.getElementById(name).getAttribute("src").replace("jak/"+name,"").replace(".png",""));
-            console.log(n);
             n = (n+1)%num;
             document.getElementById(name).src = "jak/"+name + n + ".png";
         }
@@ -37,5 +36,17 @@
         <img id="kaje" src="jak/kaje0.png" onclick="changeImage('kaje',7);">
         <h2>Daj</h2>
         <img id="daj" src="jak/daj0.png" onclick="changeImage('daj',7);">
+        <h2>Rijik</h2>
+        <img id="rijik" src="jak/rijik0.png" onclick="changeImage('rijik',7);">
+        <h2>Ridje</h2>
+        <img id="ridje" src="jak/ridje0.png" onclick="changeImage('ridje',7);">
+        <h2>Jay</h2>
+        <img id="jay" src="jak/jay0.png" onclick="changeImage('jay',7);">
+        <h2>Idje</h2>
+        <img id="idje" src="jak/idje0.png" onclick="changeImage('idje',7);">
+        <h2>Saje</h2>
+        <img id="saje" src="jak/saje0.png" onclick="changeImage('saje',7);">
+        <h2>Gaje</h2>
+        <img id="gaje" src="jak/gaje0.png" onclick="changeImage('gaje',7);">
     </body>
 </html>
