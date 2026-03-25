@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Number System of the Week</title>
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <h1>Number System of the Week</h1>
+        <hr/>
+        <p style="text-align:center;"><a href="../home.html">Home Page</a></p>
+        <hr/>
+        <div class="leftcolumn" id="leftcolumn"></div>
+        <div class="rightcolumn" id="rightcolumn">
+            <h2>Recent systems</h2>
+            <p><a href="numbersystem.html?article=0">Integers</a> (3/24/2026)</p>
+        </div>
+        <div class="articlehidden" id="article0">
+            <h1>Integers (3/24/2026)</h1>
+
+            <p>
+                This is the first post of many about various number systems, hopefully being every week or so. I won't get into what I define as a number system in this post, but I will get there eventually. The first few blog posts will likely be longer than all of the others due to containing expository material.
+            </p>
+            <p>
+                Today's number system is about the integers. These are the simple counting numbers, along with 0, and all of their negatives. There exist the regular multiplication and addition, and the expected rules like commutativity work as well.
+            </p>
+
+            <p>While boring, this ubiquitous number system has many possible other number systems as a variant of it. In fact, all other number systems of a certain type (known as "rings"), are sort of "variants" of the integers, with either new stuff added or two integers being considered the same, or both.
+            A ring is essentially an algebraic structure with addition, subtraction and multiplication. More specifically, a ring is a set of objects, along with two binary operations, "+" and "*", and an unary operation "-".</p>
+            <p> These operations obey these laws:</p>
+            <ul>
+                <li>(a+b)+c = a+(b+c) (Associativity)</li>
+                <li>a+b = b+a (Commutivity)</li>
+                <li>a+0 = 0+a = a, where 0 is a specific element of the ring</li>
+                <li>a+(-a) = (-a)+a = 0. (Subtraction)</li>
+                <br/>
+                <li>(a*b)*c = a*(b*c) (Associativity of multiplication)</li>
+                <li>a*1 = 1*a = a, where 1 is also an element of the ring</li>
+                <li>a*(b+c) = a*b + a*c, (a+b)*c = a*c+b*c (Distributivity).</li>
+            </ul>
+            
+            <p>Rings are one of the main types of number systems I'll be covering here. Integers, being the most basic example of the rings, seem to be the best place to introduce rings. Here are some properties of the integers:</p>
+            
+            <h2>Properties</h2>
+            <p>The integers are characteristic 0, meaning that you can never get 0 when just adding 1's. One thing to note is that not all rings are characteristic 0, and instead might have n 1's adding to become 0. Examples of these will be discussed soon.</p>
+
+            <p>The integers do not have division. However, they have a sort of "weaker division" known as "Euclidean division" which is just division with remainder. Not every ring has this property either. This property is called being an "<a href="https://en.wikipedia.org/wiki/Euclidean_domain">Euclidean domain</a>". Counterexamples will also be discussed eventually.</p>
+
+            <p>The integers are an <a href="https://en.wikipedia.org/wiki/Integral_domain">integral domain</a>, which means there aren't any integers that multiply to 0, unless one of them also happens to be 0. This is also not a guaranteed property, and such examples will be featured later.</p>
+
+            <p>One weird property is that any equation that holds in the integers using only addition, multiplication, and variables, which holds for all variables, also holds for all rings. This is related to the integers being in some sense the most basic variant ("initial object" in the sense of category theory) of the rings.</p>
+
+            <p>While maybe not too interesting, I could not have started with any other number system in this series. Starting with anything else wouldn't be natural. Wait.</p>
+        </div>
+        <script src="articles.js"></script>
+    </body>
+</html>
