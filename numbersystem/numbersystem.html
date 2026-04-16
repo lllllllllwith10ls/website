@@ -12,6 +12,7 @@
         <div class="leftcolumn" id="leftcolumn"></div>
         <div class="rightcolumn" id="rightcolumn">
             <h2>Recent systems</h2>
+            <p><a href="numbersystem.html?article=3">Finite Field of Order 2</a> (4/16/2026)</p>
             <p><a href="numbersystem.html?article=2">Rational Numbers</a> (4/7/2026)</p>
             <p><a href="numbersystem.html?article=1">Zero Ring</a> (4/1/2026)</p>
             <p><a href="numbersystem.html?article=0">Integers</a> (3/24/2026)</p>
@@ -88,7 +89,42 @@
             <p>Later I'll be getting into weird number systems that are less commonly known, although you still might have heard of them.</p>
 
 
-            <p><- <a href="numbersystem.html?article=1">Zero ring</a></p>
+            <p><- <a href="numbersystem.html?article=1">Zero ring</a> --- <a href="numbersystem.html?article=3">Finite Field of Order 2</a> -></p></p>
+        </div>
+        <div class="articlehidden" id="article3">
+            <h1>Finite Field of Order 2 (4/16/2026)</h1>
+
+            <p>
+                Imagine a world where (a+b)^2 = a^2+b^2. We've all wished for it, and we've all made that mistake at some point. But it doesn't work. A world like that would be impossible. Right?
+            </p>
+            <p>
+                The finite field of order 2 is a field with only two (2) elements. It is just the integers, except every even number and odd number are considered to be the same. This results in things like 2 = 0, so 1 + 1 = 0. This fact makes dealing with fields like this and similar really weird.
+            </p>
+
+            <h2>Properties</h2>
+            <p>The rationals are characteristic 2. Here characteristic 2 means that adding 1 twice gives 0. Characteristic n for any positive n means adding 1 n times gives 0. As for why characteristic 0 isn't called characteristic infinity, uhhh... WOAH IS THAT A UFO??</p>
+            
+            <style>
+            @keyframes ufo {
+                0% {
+                    margin-left: -100%;
+                }
+
+                100% {
+                    margin-left: 200%;
+                } 
+            }
+            </style>
+            <p style="animation: 3s linear 0s infinite;animation-name: ufo;">🛸</p>
+
+            <p>The finite field of order 2 is also finite and of order (number of elements) 2. Uhhh, I guess that's pretty obvious now that I think about it.</p>
+            <p>Due to it being of characteristic 2, any number is its own negative, meaning you can't use the fact that a = -a implies a = 0.</p>
+            <p>As hinted above, (a+b)^2 = a^2+b^2, due to 2 = 0 resulting in 2ab being equal to 0.</p>
+            <p>A unique property this field has is that x^2 = x for all x. This is due to x^2 = x means x = 0 or x = 1, and this field only contains 0 or 1.</p>
+
+
+            <p>The finite field of order 2 is pretty boring, but it's also incredibly important in certain things, like <a href="https://en.wikipedia.org/wiki/Error_correction_code">error correcting codes</a>. Error correcting codes are used in many places like computers to prevent messages from being messed up. These error correcting codes also lead to deep secrets of math, like the Leech Lattice. But that will have to be for another day.</p>
+            <p><- <a href="numbersystem.html?article=2">Rational Numbers</a></p>
         </div>
         <script src="articles.js"></script>
     </body>
